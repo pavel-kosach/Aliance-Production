@@ -1,18 +1,51 @@
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url('../fonts/BebasNeueBook.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
 * {
   box-sizing: border-box;
 }
 body {
   font-family: 'Noto Sans', sans-serif;
 }
+.container {
+  width: 1440px;
+  margin: auto;
+}
 .navbar {
   display: flex;
   align-items: center;
-  background-color: rgb(71, 69, 69);
   color: #fff;
   height: 94px;
+  position: relative;
+  border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+}
+.header {
+  min-height: 100vh;
+}
+.header-image {
+  background-image: url(../img/background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #292D3399;
+  z-index: 0;
 }
 .header-logo {
-  margin: 25px 50px;
+  padding: 25px 50px;
+  border-right: 1px solid rgba(235, 235, 240, 0.2);
+  height: 100%;
 }
 .header-nav {
   flex-basis: 100%;
@@ -44,15 +77,39 @@ body {
   font-size: 16px;
   line-height: 160%;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-shrink: 0;
   background-color: #3A71D1;
   border: none;
   padding: 25px 60px;
-  gap: 10px;
+  cursor: pointer;
 }
-.header-button {
+.navbar-button {
   height: 100%;
+}
+.header-content {
+  position: relative;
+  z-index: 1px;
+  margin-top: 150px;
+  color:#fff;
+}
+.seporator {
+  width: 150px;
+  height: 2px;
+  background-color: #5C8EE6;
+}
+.header-title {
+  font-family: 'Bebas Neue Book';
+  max-width: 1080px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 120%;  
+}
+.header-text {
+  max-width: 720px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
 }
