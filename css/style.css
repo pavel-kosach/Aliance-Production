@@ -113,3 +113,17 @@ body {
   font-size: 16px;
   line-height: 160%;
 }
+.header-features {
+  display: flex;
+  padding: 0;
+  margin-top: 100px;
+  min-height: 168px;
+  list-style: none;
+}
+.header-features-item {
+  padding: 30px 50px;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+}
+.header-features-item:not(:last-child) {
+  border-right: none;
+}
