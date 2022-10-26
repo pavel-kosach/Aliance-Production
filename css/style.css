@@ -9,6 +9,7 @@
 }
 body {
   font-family: 'Noto Sans', sans-serif;
+  background-color: #FAFBFC;
 }
 .container {
   width: 1440px;
@@ -126,4 +127,75 @@ body {
 }
 .header-features-item:not(:last-child) {
   border-right: none;
+}
+
+/* Блок Схема работы */
+.seporator {
+  margin-top: 150px;
+}
+.default-title {
+  font-family: 'Bebas Neue Book';
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  margin-top: 30px;
+}
+.work-plan-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+.work-plan-item {
+  max-width: 330px;
+}
+.work-plan-item-number {
+  font-family: 'Bebas Neue Book';
+  font-size: 48px;
+  line-height: 120%; 
+  color: #5C8EE6;
+  display: flex;
+  align-items: center;
+}
+.work-plan-item-number::after {
+  content: "";
+  margin-left: 30px;
+  width: 100%;
+  height: 1px;
+  background-color: #EBEBF0;
+}
+.work-plan-item-title {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 160%;
+  color: #292D33;
+}
+.work-plan-item-text {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828A99;
+}
+.steps-link {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  color: #5C8EE6;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.steps-link::before {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background-color: #5C8EE6;
+  display: inline-block;
+  margin-right: 20px;
 }
