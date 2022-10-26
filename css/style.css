@@ -20,10 +20,22 @@ body {
   align-items: center;
   color: #fff;
   height: 94px;
-  position: relative;
+  position: fixed;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  z-index: 3;
+  width: 100%;
+  transition: 0.3s;
+}
+.navbar-light {
+  background-color: #fff;
+  color: #292D33;
+  border-bottom: none;
+}
+.navbar-light .logo-dark {
+  fill: #292D33;
 }
 .header {
+  padding-top: 94px;
   min-height: 100vh;
 }
 .header-image {
