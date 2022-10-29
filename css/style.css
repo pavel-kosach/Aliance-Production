@@ -30,9 +30,15 @@ body {
   background-color: #fff;
   color: #292D33;
   border-bottom: none;
+  height: 74px;
 }
 .navbar-light .logo-dark {
   fill: #292D33;
+}
+.navbar-button {
+  flex-shrink: 0;
+  height: 100%;
+  padding: 25px 42px;
 }
 .header {
   padding-top: 94px;
@@ -56,7 +62,9 @@ body {
   z-index: 0;
 }
 .header-logo {
-  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
 }
