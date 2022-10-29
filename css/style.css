@@ -35,11 +35,6 @@ body {
 .navbar-light .logo-dark {
   fill: #292D33;
 }
-.navbar-button {
-  flex-shrink: 0;
-  height: 100%;
-  padding: 25px 42px;
-}
 .header {
   padding-top: 94px;
   min-height: 100vh;
@@ -48,7 +43,7 @@ body {
   background-image: url(../img/background-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom -53px;
   position: relative;
 }
 .header-image::before {
@@ -58,7 +53,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #292D3399;
+  background-color: rgba(41, 47, 55, 0.65);
   z-index: 0;
 }
 .header-logo {
@@ -105,7 +100,9 @@ body {
   cursor: pointer;
 }
 .navbar-button {
+  flex-shrink: 0;
   height: 100%;
+  padding: 25px 50px;
 }
 .header-content {
   position: relative;
@@ -121,15 +118,18 @@ body {
 .header-title {
   font-family: 'Bebas Neue Book';
   max-width: 1080px;
-  margin-top: 30px;
+  margin-top: 23px;
   font-weight: 400;
   font-size: 80px;
-  line-height: 120%;  
+  line-height: 120%;
+  letter-spacing: 0.68px;
+  padding: 0;
+  margin-bottom: 0;
 }
 .header-text {
   max-width: 720px;
   margin-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 38px;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
@@ -142,13 +142,23 @@ body {
   list-style: none;
 }
 .header-features-item {
-  padding: 30px 50px;
+  padding: 29px 50px;
   border: 1px solid rgba(235, 235, 240, 0.2);
+  width: 288px;
 }
 .header-features-item:not(:last-child) {
   border-right: none;
 }
-
+.header-features-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 0;
+  margin-top: 21px;
+}
+.header-features-icon {
+  margin-top: 4px;
+}
 /* Блок Схема работы */
 .seporator {
   margin-top: 150px;
@@ -158,7 +168,7 @@ body {
   font-weight: 400;
   font-size: 60px;
   line-height: 120%;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 .work-plan-list {
   list-style: none;
@@ -191,6 +201,8 @@ body {
   font-size: 28px;
   line-height: 160%;
   color: #292D33;
+  margin-top: 37px;
+  margin-bottom: 0px;
 }
 .work-plan-item-text {
   font-family: 'Noto Sans';
@@ -199,6 +211,7 @@ body {
   font-size: 16px;
   line-height: 160%;
   color: #828A99;
+  margin-top: 11px;
 }
 .steps-link {
   font-family: 'Noto Sans';
@@ -210,6 +223,7 @@ body {
   text-decoration: none;
   display: flex;
   align-items: center;
+  margin-top: 21px;
 }
 .steps-link::before {
   content: "";
