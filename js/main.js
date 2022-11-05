@@ -2,19 +2,21 @@ const navbar = document.querySelector (".navbar");
 const logo = document.querySelector(".logo-svg use");
 const menu = document.querySelector(".mobile-menu");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
-const lightModeOn = (event) => {
-  navbar.classList.add("navbar-light"); // перекрашивание меню
-  logo.href.baseVal = "img/sprites.svg#logo"; // перекрашивание меню
+
+const lightModeOn = (event) => { // перекрашивание меню
+  navbar.classList.add("navbar-light");
+  logo.href.baseVal = "img/sprites.svg#logo";
 };
 const lightModeOff= (event) => {
-  navbar.classList.remove("navbar-light"); // перекрашивание меню
-  logo.href.baseVal = "img/sprites.svg#logo-light"; // перекрашивание меню
+  navbar.classList.remove("navbar-light");
+  logo.href.baseVal = "img/sprites.svg#logo-light";
 };
+
 const openMenu = (event) => { // функция открывания меню
-  menu.classList.add("is_open"); // добавляет класс is-open
+  menu.classList.add("is_open"); 
   document.body.style.overflow="hidden"; // убирает прокрутку сайта под меню
-  lightModeOn(); // перекрашивание меню
-  mMenuToggle.classList.add("close-menu"); // добавляет класс для стилизации кнопки закрытия меню
+  lightModeOn();
+  mMenuToggle.classList.add("close-menu");
 };
 const closeMenu = (event) => { // функция закрытвает меню
   menu.classList.remove("is_open"); // убирает класс is-open
@@ -30,4 +32,30 @@ window.addEventListener('scroll', () => {
 mMenuToggle.addEventListener("click",(event) => {
   event.preventDefault();
   menu.classList.contains('is_open') ? closeMenu() : openMenu();
+});
+
+const swiper = new Swiper('.swiper', { // инициализация слайдера
+  speed: 400,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    576: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    }
+  },
 });
