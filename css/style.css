@@ -361,41 +361,54 @@ body {
 .card-content {
   padding: 2.5rem 3.125rem;
 }
-.card-mark {
+.trademark-cards {
   display: flex;
-  align-items: center;
-  text-decoration: none;
+}
+.trademark-card {
   flex-basis: 50%;
+  padding: 50px;
   text-decoration: none;
   border: 1px solid #EBEBF0;
-  position: relative; 
-  transition: border 0.2s;
-  padding: 50px;
+  transition: 0.2s;
+  padding: 3.125rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 50px;
+  grid-template-areas: 
+  "logo title title"
+  "logo text text";
 }
-.card-mark-text {
+.trade-mark-logo {
+  grid-area: logo;
+  fill: #828A99;
+  width: 100%;
+}
+.trademark-card-title {
+  grid-area: title;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 1.75rem;
+  line-height: 160%;
+  color: #292D33;
+  margin: 0;
+
+}
+.trademark-text {
+  grid-area: text;
+  margin-top: .625rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
   color: #828A99;
 }
-.mark-img-mobile {
-  display: none;
-}
-.mark-img {
-  display: inline-block;
-  margin-right: 50px;
-  min-height: 180px;
-  min-width: 180px;
-}
-.mark-title {
-  display: inline-block;
-  max-width: 155px;
-}
-.card-mark:hover .card-title {
-  color: #5C8EE6;
-}
-.card-mark:hover {
+.trademark-card:hover {
   border-color: #5C8EE6;
+}
+.trademark-card:hover .trade-mark-logo {
+  fill: #5C8EE6;
+}
+.trademark-card:hover .trademark-card-title {
+ color: #5C8EE6;
 }
 @media(max-width:1700px) {
   html {
@@ -450,6 +463,9 @@ body {
   .card-mark {
     flex-basis: 100%; 
     margin-bottom: 30px;
+  }
+  .trademark-card {
+    grid-template-columns: auto auto;
   }
 }
 @media(max-width:992px) {
@@ -578,6 +594,9 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-11px);
   }
+  .trademark-cards {
+    flex-direction: column;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -592,26 +611,7 @@ body {
   .card {
     flex-basis: 100%;
   }
-  .card-mark {
-  padding: 30px;
-  }
-  .card-mark-text {
-    margin: 0;
-    padding: 0;
-    margin-top: 20px;
-  }
-  .mark-img {
-    display: none;
-  }
-  .mark-img-mobile {
-    display: block;
-    margin-right: 30px;
-  }
-  .mark-header-img {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-  }
+
 }
 @media (max-width: 576px) {
   .container {
@@ -626,4 +626,9 @@ body {
   /* .header-content {
     padding-top: 3rem;
   } */
+  .trademark-card {
+    grid-template-areas: 
+    "logo title"
+    "text text";
+  }
 }
