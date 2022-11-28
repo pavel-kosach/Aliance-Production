@@ -900,6 +900,13 @@ button {
   .clients-content {
     flex-basis: 60%;
   }
+  .cta-image {
+    width: 35%;
+  }
+  .footer-menu-columns-2 {
+    columns: 1;
+     min-width: 30rem;
+  }
 }
 @media(max-width:992px) {
   html {

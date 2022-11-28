@@ -100,7 +100,6 @@ const swiperBlog = new Swiper(".blog-slider", {
 
 const modal = document.querySelector(".modal");
 const modalDialog = document.querySelector(".modal-dialog");
-
 document.addEventListener("click", (event) => {
   if (
     event.target.dataset.toggle == "modal" ||
@@ -116,23 +115,3 @@ document.addEventListener("keyup", (event) => {
     modal.classList.toggle("is-open");
   }
 });
-
-
-
-
-
-
-
-
-// const modalToggle = document.querySelectorAll("[data-toggle=modal]");
-// const modalClose = document.querySelector(".modal-close");
-// modalToggle.forEach((element) => {
-//   element.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     modal.classList.add('is-open');
-//   });
-// });
-// modalClose.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   modal.classList.remove('is-open');
-// });
