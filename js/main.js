@@ -1,49 +1,55 @@
-const navbar = document.querySelector (".navbar");
+const navbar = document.querySelector(".navbar");
 const logoLight = document.querySelector(".logo-light");
 const logo = document.querySelector(".logo");
 const menu = document.querySelector(".mobile-menu");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
+const isFront = document.body.classList.contains("front-page");
 
-const lightModeOn = (event) => { // перекрашивание меню
+const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
-  logo.style.display = "block";
-  logoLight.style.display = "none";
 };
 const lightModeOff= (event) => {
   navbar.classList.remove("navbar-light");
-  logo.style.display = "none";
-  logoLight.style.display = "block";
 };
 
-const openMenu = (event) => { // функция открывания меню
-  menu.classList.add("is_open"); 
-  document.body.style.overflow="hidden"; // убирает прокрутку сайта под меню
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
+}
+
+
+const openMenu = (event) => {
+  // функция открывания меню
+  menu.classList.add("is_open");
+  document.body.style.overflow = "hidden"; // убирает прокрутку сайта под меню
   lightModeOn();
   mMenuToggle.classList.add("close-menu");
 };
-const closeMenu = (event) => { // функция закрытвает меню
+const closeMenu = (event) => {
+  // функция закрытвает меню
   menu.classList.remove("is_open"); // убирает класс is-open
-  document.body.style.overflow=""; // возвращает прокрутку сайта под меню
+  document.body.style.overflow = ""; // возвращает прокрутку сайта под меню
   lightModeOff(); // перекрашивание меню
   mMenuToggle.classList.remove("close-menu"); // убирает класс для стилизации кнопки закрытия меню
 };
 // изменение цвета navbar при скролле
-window.addEventListener('scroll', () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff(); // перекрашивание мен
+window.addEventListener("scroll", () => {
+  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  if(isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
 // открытие и закрытие мобильного меню
-mMenuToggle.addEventListener("click",(event) => {
+mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
-  menu.classList.contains('is_open') ? closeMenu() : openMenu();
+  menu.classList.contains("is_open") ? closeMenu() : openMenu();
 });
-
 
 const swiperSteps = new Swiper(".steps-slider", {
   speed: 400,
   slidesPerView: 1,
   navigation: {
-    nextEl: '.steps-button-next',
-    prevEl: '.steps-button-prev',
+    nextEl: ".steps-button-next",
+    prevEl: ".steps-button-prev",
   },
   breakpoints: {
     // when window width is >= 320px
@@ -61,12 +67,13 @@ const swiperSteps = new Swiper(".steps-slider", {
   },
 });
 
-const swiper = new Swiper(".features-slider", { // инициализация слайдера
+const swiper = new Swiper(".features-slider", {
+  // инициализация слайдера
   speed: 400,
   slidesPerView: 1,
   navigation: {
-    nextEl: '.slider-button-next',
-    prevEl: '.slider-button-prev',
+    nextEl: ".slider-button-next",
+    prevEl: ".slider-button-prev",
   },
   breakpoints: {
     // when window width is >= 320px
@@ -83,7 +90,7 @@ const swiper = new Swiper(".features-slider", { // инициализация с
     },
     1200: {
       slidesPerView: 5,
-    }
+    },
   },
 });
 
@@ -92,26 +99,31 @@ const swiperBlog = new Swiper(".blog-slider", {
   slidesPerView: 2,
   spaceBetween: 30,
   navigation: {
-    nextEl: '.blog-button-next',
-    prevEl: '.blog-button-prev',
+    nextEl: ".blog-button-next",
+    prevEl: ".blog-button-prev",
   },
 });
 
+let currentModal;
+let modalDialog;
+let alertModal = document.querySelector("#alert-modal");
 
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    !event.composedPath().includes(modalDialog) && modal.classList.contains("is-open")
-  ) {
-    event.preventDefault();
-    modal.classList.toggle("is-open");
-  } 
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      currentModal = document.querySelector(button.dataset.target);
+      currentModal.classList.toggle("is-open");
+      modalDialog = currentModal.querySelector(".modal-dialog");
+      currentModal.addEventListener("click" , (event) => {
+        if (!event.composedPath().includes(modalDialog)) {
+          currentModal.classList.remove("is-open");
+        }
+      });
+    });
 });
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    currentModal.classList.toggle("is-open");
   }
 });
