@@ -107,7 +107,13 @@
   <section class="expert">
     <div class="container">
       <div class="expert-content">
-        <div class="expert-img"><img src="./img/chemical.png" alt="#" class="expert-logo"></div>
+        <div class="expert-img">
+          <picture>
+          <source type="image/webp" srcset="img/avtohim-production-photo.webp">
+          <source type="image/jpeg" srcset="img/avtohim-production-photo.jpg">
+          <img class="expert-logo" src="img/avtohim-production-photo.jpg" alt="Контрактное производство автомобильной химии">
+          </picture>
+        </div>
         <div class="expert-description">
           <div class="seporator"></div>
           <h2 class="default-title expert-title">Контрактное производство автомобильной химии</h2>
@@ -160,15 +166,21 @@
               </li>
             </ul>
             <!-- navigation buttons -->
-            <div class="slider-buttons">
+            <div class="slider-buttons about-slider-buttons">
               <div class="slider-button-prev">
-                <svg width="36" height="24">
+                <svg class="white-arrows" width="36" height="24">
                   <use href="img/sprites.svg#arrow-prev"></use>
+                </svg>
+                <svg class="dark-arrows" width="36" height="24">
+                  <use href="img/sprites.svg#arrow-prev-black"></use>
                 </svg>
               </div>
               <div class="slider-button-next">
-                <svg width="36" height="24">
+                <svg class="white-arrows" width="36" height="24">
                   <use href="img/sprites.svg#arrow-next"></use>
+                </svg>
+                <svg class="dark-arrows" width="36" height="24">
+                  <use href="img/sprites.svg#arrow-next-black"></use>
                 </svg>
               </div>
             </div>
@@ -313,53 +325,7 @@
       </ul>
     </div>
   </section>
-  <section class="about-blog">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="default-title">Исследовательский центр <br> Aliance production</h2>
-        <div class="about-blog-text-wrapper">
-        <p class="about-blog-text">
-        Явные признаки победы институционализации рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего мира могут быть ограничены исключительно образом мышления. Лишь независимые государства набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов. Лишь акционеры крупнейших компаний могут быть призваны к ответу.
-        </p>
-        <p class="about-blog-text">
-        С учётом сложившейся международной обстановки, синтетическое тестирование требует определения и уточнения анализа существующих паттернов поведения. Не следует, однако, забывать, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений. Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление однозначно фиксирует необходимость стандартных подходов.
-        </p>
-        </div>
-          <!-- Slider main container -->
-          <div class="swiper blog-slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide blog-card">
-            <img src="img/blog/med.jpg" alt="#" class="blog-card-img">
-            </div>
-            <div class="swiper-slide blog-card">
-            <img src="img/blog/metal.jpg" alt="#" class="blog-card-img">
-            </div>
-            <div class="swiper-slide blog-card">
-            <img src="img/blog/med.jpg" alt="#" class="blog-card-img">
-            </div>
-          </div>
-          <div class="blog-slider-footer">
-          <!-- If we need navigation buttons -->
-          <div class="blog-buttons primary-buttons-wrapper">
-            <div class="blog-button-prev primary-button-prev">
-              <svg width="36" height="24">
-                <use href="img/sprites.svg#arrow-prev"></use>
-              </svg>
-            </div>
-            <div class="blog-button-next primary-button-next">
-              <svg width="36" height="24">
-                <use href="img/sprites.svg#arrow-next"></use>
-              </svg>
-            </div>
-          </div>
-          <!-- /.blog-buttons -->
-          </div>
-          <!-- /.blog-slider-footer -->
-        </div>
-      </div>
-    </section>
+  <?php include_once("./template/about-blog.php");?>
     <div class="section work-plan">
       <div class="container">
         <div class="seporator"></div>
@@ -408,113 +374,8 @@
         </div>
       </div>
     </div>
-    <section class="section clients">
-      <div class="container">
-        <div class="seporator"></div>
-        <div class="clients-wrapper">
-          <div class="clients-content">
-            <h2 class="default-title">Производим аэрозольную продукцию для разных сфер</h2>
-            <ul class="clients-list">
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#probirka"></use>
-                </svg>
-                Химические производства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#carwash"></use>
-                </svg>
-                Автомойки
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#fork"></use>
-                </svg>
-                Пищевая продукция
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#paint"></use>
-                </svg>
-                Лаки и краски
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#hand"></use>
-                </svg>
-                Косметические средства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#car-repair"></use>
-                </svg>
-                Автомобильная косметика
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#t-shirt"></use>
-                </svg>
-                Косметика по уходу за одеждой
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#track"></use>
-                </svg>
-                Косметика по уходу за обувью
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#bricks"></use>
-                </svg>
-                Строительные материалы
-              </li>
-              <li class="clients-list-item">
-               <svg width="30" height="30" class="clients-list-icon">
-                  <use href="img/sprites.svg#more"></use>
-               </svg>
-               И многих других
-              </li>
-            </ul>
-          </div>
-          <!-- /.clients-content -->
-          <div class="clients-logo-list">
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-          </div>
-          <!-- /.clients-logo -->
-        </div>
-        <!-- /.clients-wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section clients -->
-  <?php include_once ('./template/footer.php'); ?>
+    <?php include_once("./template/clients.php")?>
+    <?php include_once ('./template/footer.php'); ?>
   <div class="modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>

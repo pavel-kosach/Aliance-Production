@@ -1,10 +1,10 @@
 <section class="cta <?= $footer_avtohim ?>" id="cta">
     <div class="bg-grey section-cta">
     <picture>
-  <source type="image/webp" srcset="img/cta.webp">
-  <source  type="image/png" srcset="img/сta.png">
-  <img  class="cta-image" src="img/cta.png" alt="call to action">
-</picture>
+    <source type="image/webp" srcset="img/cta.webp">
+    <source type="image/png" srcset="img/сta.png">
+    <img class="cta-image" src="img/cta.png" alt="call to action">
+    </picture>
       <div class="cta-form-wrapper container">
       <form action="handler.php" method="POST" class="cta-form">
           <h2 class="section-title сta-form-title">Хотите сотрудничать?</h2>

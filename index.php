@@ -225,64 +225,7 @@
         </div>
       </div>
     </div>
-    <section class="section production">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="default-title">Контрактное производство</h2>
-        <div class="cards">
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Автомобильная химия</h3>
-              <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
-            </div>
-            <!-- /.card-content -->
-            <img src="img/avtohim.png" alt="#" class="card-img">
-          </a>
-          <a href="#" class="card">
-            <div class="card-content">
-              <h3 class="card-title">Бытовая химия</h3>
-              <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
-            </div>
-            <!-- /.card-content -->
-            <img src="img/bythim.png" alt="#" class="card-img">
-          </a>
-          <a href="#" class="card">
-             <div class="card-content">
-              <h3 class="card-title">Дезинфицирующие средства</h3>
-              <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
-            </div>
-            <!-- /.card-content -->
-            <img src="img/pish-aerozol.png" alt="#" class="card-img">
-          </a>
-          <a href="#" class="card">
-             <div class="card-content">
-              <h3 class="card-title">Пищевые аэрозоли</h3>
-              <p class="card-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
-            </div>
-            <!-- /.card-content -->
-            <img src="img/pish-aerozol.png" alt="#" class="card-img">
-          </a>
-          <a href="#" class="card">
-             <div class="card-content">
-              <h3 class="card-title">Косметическая продукция</h3>
-              <p class="card-text">Лишь интерактивные прототипы призваны к ответу.</p>
-            </div>
-            <!-- /.card-content -->
-            <img src="img/avtohim.png" alt="#" class="card-img">
-          </a>
-          <a href="#" class="card">
-             <div class="card-content">
-              <h3 class="card-title">Краски аэрозольные</h3>
-              <p class="card-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
-            </div>
-            <!-- /.card-content -->
-            <img src="img/bythim.png" alt="#" class="card-img">
-          </a>
-        </div>
-        <!-- /.cards -->
-      </div>
-    </section>
-    <!-- /.section production -->
+    <?php include_once("./template/production-block.php")?>
     <section class="section trademark">
       <div class="container">
         <div class="seporator"></div>
@@ -307,129 +250,8 @@
       </div>
     </section>
     <!-- /.trademark -->
-    <section class="section founder">
-      <img src="img/founder.png" alt="#" class="founder-photo">
-      <div class="container">
-        <div class="founder-content-wrapper">
-          <div class="founder-content">
-            <div class="seporator"></div>
-            <h2 class="default-title">Отношение к делу и к клиентам</h2>
-            <p class="founder-text">
-              Кстати, интерактивные прототипы описаны максимально подробно. Повседневная практика показывает, что укрепление и развитие внутренней структуры говорит о возможностях соответствующих условий активизации. Внезапно, независимые государства, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут подвергнуты целой серии независимых исследований. С учётом сложившейся международной обстановки, синтетическое тестирование выявляет срочную потребность системы массового участия. <br>
-              А ещё действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Не следует, однако, забывать, что выбранный нами инновационный путь в значительной степени обусловливает важность дальнейших направлений развития.
-            </p>
-            <a href="#" class="button-link">Подробнее о компании</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /.section founder -->
-    <section class="section clients">
-      <div class="container">
-        <div class="seporator"></div>
-        <div class="clients-wrapper">
-          <div class="clients-content">
-            <h2 class="default-title">Производим аэрозольную продукцию для разных сфер</h2>
-            <ul class="clients-list">
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#probirka"></use>
-                </svg>
-                Химические производства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#carwash"></use>
-                </svg>
-                Автомойки
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#fork"></use>
-                </svg>
-                Пищевая продукция
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#paint"></use>
-                </svg>
-                Лаки и краски
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#hand"></use>
-                </svg>
-                Косметические средства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#car-repair"></use>
-                </svg>
-                Автомобильная косметика
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#t-shirt"></use>
-                </svg>
-                Косметика по уходу за одеждой
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#track"></use>
-                </svg>
-                Косметика по уходу за обувью
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="clients-list-icon">
-                   <use href="img/sprites.svg#bricks"></use>
-                </svg>
-                Строительные материалы
-              </li>
-              <li class="clients-list-item">
-               <svg width="30" height="30" class="clients-list-icon">
-                  <use href="img/sprites.svg#more"></use>
-               </svg>
-               И многих других
-              </li>
-            </ul>
-          </div>
-          <!-- /.clients-content -->
-          <div class="clients-logo-list">
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client-logo.png" alt="#" class="clients-logo">
-            </div>
-          </div>
-          <!-- /.clients-logo -->
-        </div>
-        <!-- /.clients-wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section clients -->
+    <?php include_once("./template/founder.php");?>
+    <?php include_once("./template/clients.php");?>
     <section class="section blog">
       <div class="container">
         <div class="seporator"></div>
@@ -440,17 +262,29 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/med.jpg" alt="#" class="blog-card-img">
+                            <picture>
+              <source type="image/webp" srcset="img/blog-med.webp">
+              <source type="image/jpeg" srcset="img/blog-med.jpg">
+              <img src="img/blog-med.jpg" alt="#" class="blog-card-img">
+              </picture>
               <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
               <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/metal.jpg" alt="#" class="blog-card-img">
+                            <picture>
+              <source type="image/webp" srcset="img/blog-metal.webp">
+              <source type="image/jpeg" srcset="img/blog-metal.jpg">
+              <img src="img/blog-metal.jpg" alt="#" class="blog-card-img">
+              </picture>
               <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
               <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img src="img/blog/med.jpg" alt="#" class="blog-card-img">
+              <picture>
+              <source type="image/webp" srcset="img/blog-med.webp">
+              <source type="image/jpeg" srcset="img/blog-med.jpg">
+              <img src="img/blog-med.jpg" alt="#" class="blog-card-img">
+              </picture>
               <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
               <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены...</p>
             </a>
