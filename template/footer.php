@@ -5,7 +5,7 @@
           <form action="handler.php" method="POST" class="cta-form">
             <h2 class="default-title cta-form-title">Хотите сотрудничать?</h2>
             <p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-            <div class="input-group-wrapper">
+            <div class="input-group-wrapper cta-inputs">
               <div class="input-group">
                 <input id="user-name" name="username" type="text" class="input" placeholder=" ">
                 <label class="input-group-label" for="user-name">Имя</label>

@@ -166,6 +166,12 @@
         <p class="seo-text">
         Также как дальнейшее развитие различных форм деятельности предполагает независимые способы реализации существующих финансовых и административных условий. Каждый из нас понимает очевидную вещь: курс на социально-ориентированный национальный проект играет важную роль в формировании как самодостаточных, так и внешне зависимых концептуальных решений. Внезапно, интерактивные прототипы набирают популярность среди определенных слоев населения, а значит, должны быть...
         </p>
+      <a href="#" class="seo-link"> 
+      <svg class="phone-icon icon-load" width="24" height="24">
+      <use href="img/sprites.svg#load"></use>
+      </svg>
+      <span class="seo-link-text">Читать больше</span>
+      </a>
       </div>
     </section>
   <?php include_once ('./template/footer.php'); ?>
@@ -213,6 +219,7 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

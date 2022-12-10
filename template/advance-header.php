@@ -8,5 +8,6 @@
     <li class="breadcrumbs-list"><a href="#" class="breadcrumbs-link-dark"><?= $page_title ?></a></li>
   </ul>
   </div>
+  <img src="./img/avto-him.png" alt="#" class="advance-header-img">
   </div>
 </header>

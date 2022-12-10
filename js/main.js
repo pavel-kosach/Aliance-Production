@@ -8,14 +8,13 @@ const isFront = document.body.classList.contains("front-page");
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
 };
-const lightModeOff= (event) => {
+const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
 };
 
 const changeNavHeight = (height) => {
   navbar.style.height = height;
-}
-
+};
 
 const openMenu = (event) => {
   // функция открывания меню
@@ -34,7 +33,7 @@ const closeMenu = (event) => {
 // изменение цвета navbar при скролле
 window.addEventListener("scroll", () => {
   this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
-  if(isFront) {
+  if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
 });
@@ -96,11 +95,16 @@ const swiper = new Swiper(".features-slider", {
 
 const swiperBlog = new Swiper(".blog-slider", {
   speed: 400,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+    },
   },
 });
 
@@ -110,20 +114,34 @@ let alertModal = document.querySelector("#alert-modal");
 
 const modalButtons = document.querySelectorAll("[data-toggle=modal]");
 modalButtons.forEach((button) => {
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      currentModal = document.querySelector(button.dataset.target);
-      currentModal.classList.toggle("is-open");
-      modalDialog = currentModal.querySelector(".modal-dialog");
-      currentModal.addEventListener("click" , (event) => {
-        if (!event.composedPath().includes(modalDialog)) {
-          currentModal.classList.remove("is-open");
-        }
-      });
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    currentModal = document.querySelector(button.dataset.target);
+    currentModal.classList.toggle("is-open");
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    currentModal.addEventListener("click", (event) => {
+      if (!event.composedPath().includes(modalDialog)) {
+        currentModal.classList.remove("is-open");
+      }
     });
+  });
 });
 document.addEventListener("keyup", (event) => {
   if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
     currentModal.classList.toggle("is-open");
   }
 });
+
+var element = document.getElementById("user-phone");
+var maskOptions = {
+  mask: "+7(000)000-00-00",
+  lazy: true,
+};
+var mask = new IMask(element, maskOptions);
+
+var element = document.getElementById("modal-user-phone");
+var maskOptions = {
+  mask: "+7(000)000-00-00",
+  lazy: true,
+};
+var mask = new IMask(element, maskOptions);

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <?php include_once ('./template/header.php'); ?>
-<body>
+<body class="policy-page">
       <!-- Мобильное меню -->
     <div class="mobile-menu">
     <ul class="mobile-menu-nav">
@@ -171,6 +171,7 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
   </body>

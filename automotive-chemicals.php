@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <?php include_once ('./template/header.php'); ?>
-<body>
+<body class="chemic-page">
     <!-- Мобильное меню -->
     <div class="mobile-menu">
     <ul class="mobile-menu-nav">
@@ -240,6 +240,77 @@
         <img src="./img/lab.png" alt="#" class="our-production-picture">
       </div>
       </div>
+    </div>
+  </section>
+  <section class="types">
+    <div class="container">
+      <div class="seporator"></div>
+      <h2 class="default-title types-title">виды автохимии</h2>
+      <p class="types-text">
+      Но современная методология разработки позволяет оценить значение прогресса профессионального сообщества. Есть над чем задуматься: тщательные исследования конкурентов набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям.
+      </p>
+      <ul class="types-list">
+        <li class="types-list-item">
+          Антискотч
+        </li>
+        <li class="types-list-item">
+        Многоцелевая смазка
+        </li>
+        <li class="types-list-item">
+        Жидкий ключ
+        </li>
+        <li class="types-list-item">
+        Высокотемпературная смазка
+        </li>
+        <li class="types-list-item">
+        Универсальный очиститель деталей
+        </li>
+        <li class="types-list-item">
+        Силиконовая смазка
+        </li>
+        <li class="types-list-item">
+        Цепная смазка
+        </li>
+        <li class="types-list-item">
+        Медная смазка
+        </li>
+        <li class="types-list-item">
+        Графитовая смазка
+        </li>
+        <li class="types-list-item">
+        Очиститель кондиционера пенный
+        </li>
+        <li class="types-list-item">
+        Очиститель тормозных дисков
+        </li>
+        <li class="types-list-item">
+        Очиститель битумных пятен
+        </li>
+        <li class="types-list-item">
+        Очиститель кондционера
+        </li>
+        <li class="types-list-item">
+        Очиститель дросельной заслонки
+        </li>
+        <li class="types-list-item">
+        Очиститель обивки
+        </li>
+        <li class="types-list-item">
+        Тефлоновая смазка
+        </li>
+        <li class="types-list-item">
+        Очиститель двигателя
+        </li>
+        <li class="types-list-item">
+        Универсальный очиститель
+        </li>
+        <li class="types-list-item">
+        Чернитель шин
+        </li>
+        <li class="types-list-item">
+        Чернитель шин + очистка
+        </li>
+      </ul>
     </div>
   </section>
   <section class="about-blog">
@@ -488,6 +559,7 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

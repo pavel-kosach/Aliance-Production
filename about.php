@@ -67,7 +67,6 @@
     </div>
   </div>
   <!-- /Мобильное меню -->
-  <!-- navbar -->
   <nav class="navbar navbar-light">
     <a href="#" class="mobile-menu-toggle">
       <span class="mobile-menu-line"></span>
@@ -166,15 +165,21 @@
               </li>
             </ul>
             <!-- navigation buttons -->
-            <div class="slider-buttons">
+            <div class="slider-buttons about-slider-buttons">
               <div class="slider-button-prev">
-                <svg width="36" height="24">
+                <svg class="white-arrows" width="36" height="24">
                   <use href="img/sprites.svg#arrow-prev"></use>
+                </svg>
+                <svg class="dark-arrows" width="36" height="24">
+                  <use href="img/sprites.svg#arrow-prev-black"></use>
                 </svg>
               </div>
               <div class="slider-button-next">
-                <svg width="36" height="24">
+                <svg class="white-arrows" width="36" height="24">
                   <use href="img/sprites.svg#arrow-next"></use>
+                </svg>
+                <svg class="dark-arrows" width="36" height="24">
+                  <use href="img/sprites.svg#arrow-next-black"></use>
                 </svg>
               </div>
             </div>
@@ -193,7 +198,6 @@
             <p class="our-production-text">
             Реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.
             </p>
-            
             <ul class="clients-list">
               <li class="clients-list-item">
                 <svg width="30" height="30" class="clients-list-icon">
@@ -231,7 +235,6 @@
                 </svg>
                 Краски аэрозольные
               </li>
-
             </ul>
         </div>
         <div class="our-production-img">
@@ -271,7 +274,7 @@
         </p>
         </div>
           <!-- Slider main container -->
-          <div class="swiper blog-slider">
+          <div class="swiper blog-slider about-slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -457,6 +460,7 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
