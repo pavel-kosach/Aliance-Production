@@ -1,3 +1,7 @@
+@import url("normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap");
+@import url("swiper-bundle.min.css");
+
 @font-face {
   font-family: "Bebas Neue Book";
   src: url("../fonts/BebasNeueBook.woff") format("woff");
@@ -19,7 +23,7 @@ button {
   outline: none;
 }
 .section {
-  margin-top: 9.375rem;
+  /* margin-top: 6.175rem; */
 }
 .container {
   width: 90rem;
@@ -28,14 +32,17 @@ button {
 .breadcrumbs {
   list-style-type: none;
   margin: 0;
+  margin-top: 27px;
   padding: 0;
 }
 .breadcrumbs-list {
   display: inline-block;
+  margin-left: 0;
+  padding: 0;
 }
 .breadcrumbs-list::before {
   content: "—";
-  margin-left: 0.625rem;
+  /* margin-left: 0.625rem; */
   margin-right: 0.625rem;
   font-weight: 400;
   font-size: 0.875rem;
@@ -43,6 +50,8 @@ button {
 }
 .breadcrumbs-list:first-child:before {
   content: "";
+  padding: 0;
+  margin: 0;
 }
 .breadcrumbs-link,
 .breadcrumbs-link-dark {
@@ -99,8 +108,11 @@ button {
 .header {
   padding-top: 5.875rem;
 }
+.no-webp .header-image {
+  background-image: url("../img/header-bg.jpg");
+}
 .header-image {
-  background-image: url(../img/background-image.jpg);
+  background-image: url("../img/header-bg.webp");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,6 +146,7 @@ button {
   padding: 0;
   padding-left: 3.125rem;
   margin: 0;
+  margin-right: -1350px;
 }
 .header-nav-item {
   height: 100%;
@@ -272,6 +285,7 @@ button {
   padding: 0;
   margin-top: 100px;
   list-style: none;
+  margin-bottom: 0;
 }
 .header-features-item {
   padding: 1.8125rem 3.125rem;
@@ -314,6 +328,7 @@ button {
   font-size: 3.75rem;
   line-height: 120%;
   margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 .work-plan-list {
   list-style: none;
@@ -321,7 +336,9 @@ button {
   gap: 1.875rem;
   padding: 0;
 }
-
+.steps-slider {
+  margin-top: 37px;
+}
 .work-plan-item {
   max-width: 20.625rem;
 }
@@ -347,7 +364,7 @@ button {
   font-size: 1.75rem;
   line-height: 160%;
   color: #292d33;
-  margin-top: 2.3125rem;
+  margin-top: 2.1rem;
   margin-bottom: 0px;
 }
 .work-plan-item-text {
@@ -358,6 +375,12 @@ button {
   line-height: 160%;
   color: #828a99;
   margin-top: 0.6875rem;
+}
+.production {
+  margin-top: 6.175rem;
+}
+.production .seporator {
+  margin-top: 8.375rem;
 }
 .button-link {
   font-family: "Noto Sans";
@@ -404,6 +427,7 @@ button {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 3.4375rem;
 }
 .card {
   flex-basis: 33%;
@@ -444,6 +468,9 @@ button {
 }
 .card-content {
   padding: 2.5rem 3.125rem;
+}
+.trademark {
+  margin-top: 6.25rem;
 }
 .trademark-cards {
   display: flex;
@@ -496,12 +523,13 @@ button {
 .founder {
   min-height: 41.25rem;
   position: relative;
+  margin-top: 9.175rem;
 }
 .founder-photo {
   position: absolute;
   left: 0;
   top: 0;
-  width: 40%;
+  width: 44%;
   height: 100%;
   object-fit: cover;
 }
@@ -529,7 +557,7 @@ button {
   list-style: none;
   padding: 0;
   columns: 2 auto;
-  margin-top: 1.375rem;
+  margin-top: 2.375rem;
 }
 .clients-list-item {
   display: flex;
@@ -546,6 +574,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 10;
+  margin-top: 35px;
 }
 .clients-logo-item {
   display: flex;
@@ -553,7 +582,7 @@ button {
   border: 1px solid #ebebf0;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 2.5625rem;
 }
 .clients-logo {
   max-width: 100%;
@@ -610,6 +639,9 @@ button {
   font-size: 1.75rem;
   line-height: 160%;
   margin: 0px;
+}
+.blog-slider {
+  margin-top: 3.625rem;
 }
 .blog-card-text {
   font-style: normal;
@@ -678,7 +710,7 @@ button {
 }
 .section-cta {
   position: relative;
-  padding-top: 5rem;
+  padding-top: 3rem;
   margin-top: 14.3125rem;
   padding-bottom: 6.25rem;
   height: 34.5rem;
@@ -697,6 +729,7 @@ button {
 }
 .cta-form-title {
   /* margin: 0; */
+  margin-top: 41px;
 }
 .cta-inputs {
   width: 52.5rem;
@@ -717,6 +750,9 @@ button {
 }
 .policy-page .cta {
   display: none;
+}
+.policy {
+  margin-bottom: 6.25rem;
 }
 .input-group-wrapper {
   display: flex;
@@ -975,6 +1011,9 @@ button {
   width: 100%;
   margin-bottom: 1.5rem;
 }
+.modal-image {
+  max-width: 100%;
+}
 
 /* About */
 .expert {
@@ -1005,6 +1044,14 @@ button {
 .about-slider-buttons {
   border: 1px solid #ebebf0;
 }
+.expert-logo {
+  width: 480px;
+  height: auto;
+}
+/* .expert-logo {
+  width: 100%;
+  height: 100%;
+} */
 .dark-arrows {
   display: none;
 }
@@ -1177,6 +1224,9 @@ button {
     max-width: none;
     flex-basis: 46%;
   }
+  .header-nav {
+    margin-right: 0;
+  }
 }
 @media (max-width: 1460px) {
   html {
@@ -1208,6 +1258,9 @@ button {
   }
   .cta-image {
     width: 40%;
+  }
+  .header-nav {
+    /* margin-right: -1250px; */
   }
 }
 @media (max-width: 1200px) {
