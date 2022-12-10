@@ -86,7 +86,8 @@
           </div>
     </div>
   </section>
-  <section class="our-production">
+  <?php include_once('./template/avtohim-create.php');?>
+  <!-- <section class="our-production">
     <div class="container">
       <div class="our-production-wrapper">
         <div class="our-production-description">
@@ -156,7 +157,7 @@
       </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="types">
     <div class="container">
       <div class="seporator"></div>

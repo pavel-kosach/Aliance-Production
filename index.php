@@ -105,7 +105,7 @@
       <a href="tel:+74996861014" class="header-phone-link">+7 (499) 686-10-14</a>
     </div>
     <!-- /.header-phone -->
-    <button class="button navbar-button" data-toggle="modal">
+    <button class="button navbar-button" data-toggle="modal" data-target="#feedback-modal">
       <svg class="button-icon" width="24" height="24">
         <use href="img/sprites.svg#phone"></use>
       </svg>
@@ -313,68 +313,7 @@
     </section>
     <!-- /.section blog -->
     <?php include_once ('./template/footer.php'); ?>
-    <div class="modal" id="feedback-modal">
-      <div class="modal-dialog">
-        <h2 class="modal-title">Есть вопросы?</h2>
-        <!-- /.modal-title -->
-        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
-          <svg class="close-icon" width="24" height="24">
-            <use href="img/sprites.svg#modal-close"></use>
-          </svg>
-        </a>
-        <!-- /.modal-close -->
-        <p class="modal-text">
-          Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
-        </p>
-        <form action="handler.php" method="POST" class="modal-form">
-          <div class="input-group-wrapper input-group-vertical">
-            <div class="input-group modal-input-group">
-              <input id="modal-user-name" type="text" class="input modal-input" placeholder=" " name="username">
-              <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
-            </div>
-            <!-- /.input-group -->
-            <div class="input-group modal-input-group">
-              <input id="modal-user-phone" type="tel" class="input modal-input" placeholder=" " name="userphone">
-              <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
-            </div>
-            <!-- /.input-group -->
-          </div>
-          <div class="modal-form-footer">
-            <button type="submit" class="button modal-form-button">Оставить заявку</button>
-            <div class="notify">
-              <svg class="notify-icon" width="12" height="12">
-                <use href="img/sprites.svg#shield"></use>
-              </svg>
-              <p class="notify-text">
-                Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!
-              </p>
-            </div>
-          </div>
-        </form>
-        <!-- /.modal-form -->
-        <!-- /.modal-text -->
-      </div>
-      <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
-    <div class="modal" id="alert-modal">
-      <div class="modal-dialog">
-        <h2 class="modal-title">Спасибо</h2>
-        <!-- /.modal-title -->
-        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
-          <svg class="close-icon" width="24" height="24">
-            <use href="img/sprites.svg#modal-close"></use>
-          </svg>
-        </a>
-        <!-- /.modal-close -->
-        <p class="modal-text">
-          Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
-        </p>
-        <!-- /.modal-text -->
-      </div>
-      <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
+    <?php include_once ('./template/modals.php'); ?>
   <script src="https://unpkg.com/imask"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/just-validate.production.min.js"></script>
