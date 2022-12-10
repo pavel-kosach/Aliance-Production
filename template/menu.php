@@ -58,7 +58,7 @@
       <span class="mobile-menu-line"></span>
       <span class="mobile-menu-line"></span>
     </a>
-    <a href="/" class="header-logo">
+    <a href="/aliance/index.php" class="header-logo">
       <svg class="logo-svg logo-light">
         <use href="img/sprites.svg#logo-light"></use>
       </svg>  
